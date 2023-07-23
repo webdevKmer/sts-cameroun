@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-.link:hover{
-    @apply text-yellow-400
+
+.container {
+  @apply max-w-6xl mx-auto px-3 py-3
+}
+
+header {
+  @apply w-full flex justify-between items-baseline;
+}
+
+.logo {
+  @apply text-3xl w-5/12 md:w-4/12
+}
+
+nav {
+  @apply flex justify-between text-xl md:w-9/12
+}
+
+.nav-links {
+  @apply hidden md:flex gap-6 lg:gap-10
+}
+
+.nav-btns {
+  @apply hidden md:flex gap-4
+}
+
+.burger-menu {
+  @apply hover:cursor-pointer md:hidden
+}
+
+.burger-menu .fa-close {
+  @apply hidden
 }
